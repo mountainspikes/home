@@ -1,0 +1,10 @@
+{
+  "company": "Mountain Spikes",
+  "email": "hello@mountainspikes.com",
+  "year": 2026,
+  "products": [
+    {"number": "01", "title": "Digital products", "description": "Useful, memorable web experiences made to earn their place in people's day.", "symbol": "⌁"},
+    {"number": "02", "title": "Brand systems", "description": "Distinct identities and flexible design foundations built for what comes next.", "symbol": "✦"},
+    {"number": "03", "title": "Growth support", "description": "Clear direction and practical experiments that turn vision into forward motion.", "symbol": "↗"}
+  ]
+}

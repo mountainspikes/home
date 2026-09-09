@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Mountain Spikes builds clear, capable digital tools for ambitious teams." />
+    <meta name="theme-color" content="#09131f" />
+    <title>Mountain Spikes — Digital tools for the climb</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" aria-label="Mountain Spikes home">
+        <img src="assets/images/mountain-spikes-logo.png" alt="Mountain Spikes" />
+      </a>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu">Menu <span></span></button>
+      <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+        <a href="#products">Products</a><a href="#about">About</a><a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-image" role="img" aria-label="Misty alpine mountains at sunrise"></div>
+        <div class="hero-shade"></div>
+        <div class="hero-content container">
+          <p class="eyebrow">Made for the upward path <span></span> Est. 2026</p>
+          <h1 id="hero-title">Build beyond<br /><em>the horizon.</em></h1>
+          <p class="hero-copy">Mountain Spikes is a launchpad for focused people and ideas. We make practical digital products that turn hard climbs into clear next steps.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#products">Explore our work <span>↘</span></a>
+            <button class="text-button" data-open-chat>Start a conversation <span>→</span></button>
+          </div>
+        </div>
+        <div class="hero-bottom container"><span>Scroll to discover</span><span class="scroll-line"></span><span>01 / 03</span></div>
+      </section>
+
+      <section class="intro section container" id="about">
+        <p class="eyebrow dark">The Mountain Spikes way</p>
+        <div class="intro-grid">
+          <h2>We make the next<br />move feel <em>possible.</em></h2>
+          <div class="intro-copy"><p>Good tools should feel steady underfoot. We pair sharp strategy, thoughtful design, and useful technology to help people go further with confidence.</p><a class="arrow-link" href="#contact">More about us <span>↗</span></a></div>
+        </div>
+      </section>
+
+      <section class="products section" id="products" aria-labelledby="products-title">
+        <div class="container"><div class="section-heading"><p class="eyebrow">What we do</p><h2 id="products-title">Pick your <em>route.</em></h2><p>Three ways we help ambitious work find traction.</p></div><div class="product-grid" id="product-grid"></div></div>
+      </section>
+
+      <section class="statement section container">
+        <p class="eyebrow dark">A small promise</p>
+        <blockquote>“No noise. No needless complexity. Just the momentum to <em>keep climbing.</em>”</blockquote>
+      </section>
+
+      <section class="contact section" id="contact">
+        <div class="container contact-inner"><div><p class="eyebrow">Get in touch</p><h2>Have a peak<br />in <em>mind?</em></h2></div><div class="contact-action"><p>Tell us where you’re headed. We’ll help you find the most direct path forward.</p><a class="button button-light" id="email-link" href="mailto:hello@mountainspikes.com">Write to us <span>↗</span></a></div></div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><div class="container footer-grid"><div><a class="footer-brand" href="#top">Mountain <em>Spikes</em></a><p class="footer-tagline">Digital tools for the climb.</p></div><div class="footer-links"><a href="#products">Products</a><a href="#about">About</a><a href="#contact">Contact</a></div><p class="copyright" id="copyright"></p></div></footer>
+
+    <button class="back-to-top" aria-label="Back to top">↑</button>
+    <button class="chat-trigger" data-open-chat aria-label="Open Mountain Spikes chat"><span>✦</span><b>Let’s talk</b></button>
+    <aside class="chat-panel" aria-label="Mountain Spikes assistant" aria-hidden="true">
+      <div class="chat-head"><div><span class="status-dot"></span> Mountain Spikes</div><button class="close-chat" aria-label="Close chat">×</button></div>
+      <div class="chat-body"><p class="chat-label">Trail guide</p><h2>How can we help?</h2><p>Ask about our products, approach, or starting a project.</p><div class="chat-options"><button>What do you build?</button><button>Tell me about your approach</button><button>Start a project</button></div><div class="chat-response" aria-live="polite"></div></div>
+      <a class="chat-email" id="chat-email" href="mailto:hello@mountainspikes.com">Email the team <span>↗</span></a>
+    </aside>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Ask for AI — a focused AI workspace by Mountain Spikes.">
+<title>Ask for AI — Mountain Spikes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="../../index.html" aria-label="Mountain Spikes home">
+    <span class="brand-mark">⌁</span><span>Mountain <em>Spikes</em></span>
+  </a>
+  <div class="topbar-right">
+    <span class="model-status"><i></i> AI online</span>
+    <a href="../../index.html" class="back-link">← Mountain Spikes</a>
+  </div>
+</header>
+
+<main class="workspace">
+  <section class="welcome" id="welcome">
+    <p class="eyebrow">ASK FOR AI <span></span> MOUNTAIN SPIKES</p>
+    <h1>Write what you<br><em>want to know.</em></h1>
+    <p class="subtitle">Ask a question, explore an idea, understand something difficult, or simply start with a thought.</p>
+    <div class="suggestions" aria-label="Suggested prompts">
+      <button data-prompt="Explain Docker in simple terms">Explain Docker simply</button>
+      <button data-prompt="Help me understand microservices">Understand microservices</button>
+      <button data-prompt="Give me a practical Java learning roadmap">Build a learning roadmap</button>
+    </div>
+  </section>
+
+  <section class="conversation" id="conversation" aria-live="polite"></section>
+
+  <form class="composer-wrap" id="composer-form">
+    <div class="composer">
+      <textarea id="prompt" rows="1" maxlength="8000" placeholder="Ask anything..." aria-label="Ask anything"></textarea>
+      <button class="send-button" type="submit" aria-label="Send message">↑</button>
+    </div>
+    <div class="composer-meta">
+      <span>Powered by <strong>ministral-3b-2512</strong></span>
+      <span>AI can make mistakes. Check important information.</span>
+    </div>
+  </form>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
